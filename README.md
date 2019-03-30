@@ -1,15 +1,14 @@
-### Date created
-Include the date you created this project and README file.
+### Created on 2019-03-30
 
-### Project Title
+### Programming for Data Science Project #3 - GitHub
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+This is a project where I practiced myself with GitHub based on previous work with the Bikeshare Project.
 
 ### Files used
-Include the files used
+bikeshare.py
+.gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://github.com/jfbelisle83/pdsnd_github.git which I forked for this project.
