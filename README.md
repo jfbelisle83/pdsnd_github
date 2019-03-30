@@ -1,7 +1,6 @@
 ### Created on 2019-03-30
 
 ### Programming for Data Science Project #3 - GitHub
-Replace the Project Title
 
 ### Description
 This is a project where I practiced myself with GitHub based on previous work with the Bikeshare Project.
