@@ -4,7 +4,7 @@
 Replace the Project Title
 
 ### Description
-This is a project where I practiced myself with GitHub based on previous work with the Bikeshare Project.
+This is a project where I practice myself with GitHub based on previous work with the Bikeshare Project.
 
 ### Files used
 bikeshare.py
