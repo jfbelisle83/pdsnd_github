@@ -56,7 +56,7 @@ def get_filters():
         if day_temp.lower() in DAY_DATA:
             day = day_temp.lower()
         else:
-            print('This day of the week does not exist.') # Error message
+            print('This day of the week does not exist') # Error message
     
     print('-'*40)
     return city, month, day
@@ -138,7 +138,7 @@ def station_stats(df):
     popular_trip = (df['Start Station'] + df['End Station']).mode()[0]
     print('The most frequent combination of start and end station trip are', popular_trip)
 
-    print("\nRunning this code took %s seconds." % (time.time() - start_time))
+    print("\nRunning this code took %s seconds" % (time.time() - start_time))
     print('-'*40)
 
 
@@ -209,11 +209,11 @@ def display_data(df):
                 elif add_records == 'no': 
                     break
                 else: 
-                    print('Invalid entry. Please Enter yes or no')
+                    print('Invalid entry. Please enter yes or no')
             break
         if display == 'no': 
             break
-        print('Invalid entry. Please Enter yes or no.\n')
+        print('Invalid entry. Please enter yes or no.\n')
     
     
 def main():
