@@ -76,14 +76,14 @@ def load_data(city, month, day):
     # load datafile into a DataFrame
     df = pd.read_csv(CITY_DATA[city])
 
-    # convert the Start Time column to date time
+    # convert the Start Time column to Date time
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extracting month and day of the week from Start time
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday
 
-    #to filter by month when applicable
+    #filter by month when applicable
     if month != 'all':
         month = MONTH_DATA.index(month)
 
@@ -103,7 +103,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    # TO DO: display the most common month available
     common_month = df['month'].mode()[0]
     print('The most common month is', MONTH_DATA[common_month].title())
 
@@ -170,7 +170,7 @@ def user_stats(df):
     user_types = df['User Type'].value_counts()
     print('The number of subscribers and customers are:', user_types)
         
-    # TO DO: Display counts of gender
+    # TO DO: Display counts of gender (Male / Female / Unknown)
     if 'Gender' in df: # perform gender related calculation
         gender = df['Gender'].value_counts()
         print('The number of males and females is:', gender)
