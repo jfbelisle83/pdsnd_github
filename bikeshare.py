@@ -208,11 +208,11 @@ def display_data(df):
                 elif add_records == 'no': 
                     break
                 else: 
-                    print('Invalid entry. Please Enter yes or no')
+                    print('Invalid entry. Please enter yes or no')
             break
         if display == 'no': 
             break
-        print('Invalid entry. Please Enter yes or no.\n')
+        print('Invalid entry. Please enter yes or no.\n')
     
     
 def main():
