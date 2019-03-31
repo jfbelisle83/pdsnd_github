@@ -75,14 +75,14 @@ def load_data(city, month, day):
     # load datafile into a DataFrame
     df = pd.read_csv(CITY_DATA[city])
 
-    # convert the Start Time column to date time
+    # convert the Start Time column to Date time
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extracting month and day of the week from Start time
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday
 
-    #to filter by month when applicable
+    #filter by month when applicable
     if month != 'all':
         month = MONTH_DATA.index(month)
 
