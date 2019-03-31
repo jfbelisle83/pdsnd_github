@@ -42,7 +42,6 @@ def get_filters():
             print('This month is not available.') # Error message
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-
     day_temp = ''
     while day_temp.lower() not in DAY_DATA:
         day_temp = input ('For which day of the week would you like to see the data?\nPlease enter any day from Monday to Sunday or enter all to see data for all the days\n')
@@ -182,6 +181,7 @@ def user_stats(df):
         print("\nRunning this code took %s seconds." % (time.time() - start_time))
         print('-'*40)
 
+
 def display_data(df):
     while True:
         display = input("Do you want to view the first 5 records of raw data? Enter yes or no : ").lower()
@@ -207,6 +207,7 @@ def display_data(df):
             break
         print('Invalid entry. Please Enter yes or no.\n')
     
+    
 def main():
     while True:
         city, month, day = get_filters()
@@ -224,6 +225,7 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
 
 ################################################################
 # End of the program
