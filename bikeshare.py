@@ -1,3 +1,10 @@
+#####################################################################
+#
+#   Programming for Data Science #3 - March 26th by JF Belisle
+#
+#####################################################################
+
+
 import time
 import pandas as pd
 import numpy as np
