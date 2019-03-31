@@ -46,7 +46,7 @@ def get_filters():
         if month_temp.lower() in MONTH_DATA:
             month = month_temp.lower()
         else:
-            print('This month is not available.') # Error message
+            print('This month is not available or does not exist.') # Error message
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_temp = ''
@@ -172,7 +172,7 @@ def user_stats(df):
     # TO DO: Display counts of gender
     if 'Gender' in df: # perform gender related calculation
         gender = df['Gender'].value_counts()
-        print('The number of males and females are:', gender)
+        print('The number of males and females is:', gender)
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df: # perform gender related calculation
