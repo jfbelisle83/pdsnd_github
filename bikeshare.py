@@ -55,7 +55,7 @@ def get_filters():
         if day_temp.lower() in DAY_DATA:
             day = day_temp.lower()
         else:
-            print('This day of the week does not exist.') # Error message
+            print('This day of the week does not exist') # Error message
     
     print('-'*40)
     return city, month, day
