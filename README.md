@@ -8,6 +8,7 @@ This is a project where I practiced myself with GitHub based on previous work wi
 ### Files used
 bikeshare.py
 .gitignore
+*.csv not included
 
 ### Credits
 https://github.com/jfbelisle83/pdsnd_github.git which I forked for this project
